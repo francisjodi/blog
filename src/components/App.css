@@ -5,6 +5,8 @@
   height: 100vh;
   overflow: scroll;
   background-image: url("https://randallbeans.com/wp-content/uploads/2012/01/faded.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 header {
@@ -38,6 +40,8 @@ article {
   height: 100%;
   padding: 10px;
   background-image: url("https://randallbeans.com/wp-content/uploads/2012/01/faded.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 nav {
@@ -61,4 +65,38 @@ article .body {
   background-color: red;
   color: gold;
   padding: 5px;
+}
+
+button {
+  background-color: #eed971ff;
+  border: none;
+  color: black;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: 5px solid white;
+  font-size: 20px;
+  transition-duration: 0.4s;
+  vertical-align: middle;
+
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+}
+button:hover {
+  background-color: #eed971ff;
+  color: black;
+  border: 7px solid black;
+}
+div {
+  width: auto;
+  text-align: center;
+  padding: 15px;
+}
+img {
+  padding: 5px;
+  width: 50px;
 }
