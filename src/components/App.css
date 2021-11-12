@@ -15,8 +15,10 @@ header {
   background-color: #ffa351ff;
   color: white;
   grid-column: 1 / span 2;
-  padding: 10px 5px;
+  padding: 5px 2px;
   font-size: 30px;
+  font-weight: bold;
+  align-items: center;
 }
 
 form {
@@ -69,21 +71,23 @@ article .body {
 
 button {
   background-color: #eed971ff;
-  border: none;
+  font-weight: bold;
   color: black;
   padding: 5px 20px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
+
+  /*text-decoration: none;*/
+  /*display: inline-block;*/
+  /*margin: 4px 2px;*/
+  margin: 1.5vh;
   cursor: pointer;
   border: 5px solid white;
-  font-size: 20px;
+  font-size: 12px;
   transition-duration: 0.4s;
-  vertical-align: middle;
+  /*vertical-align: middle;*/
 
-  width: 200px;
-  height: 50px;
+  width: 100px;
+  height: 40px;
   padding: 10px;
 }
 button:hover {
@@ -95,6 +99,7 @@ div {
   width: auto;
   text-align: center;
   padding: 15px;
+  font-size: 20px;
 }
 img {
   padding: 5px;
