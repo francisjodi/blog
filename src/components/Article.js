@@ -6,7 +6,8 @@ export default function Article({ article }) {
       ) : (
         <section>
           <h2>{article.title}</h2>
-          <p className="date">{`Posted: ${article.date}`}</p>
+          {/* added toDate to show current date rather than a time stamp in the article */}
+          <p className="date">{`Posted: ${article.date.toDate()}`}</p>
           <p className="body">{article.body}</p>
         </section>
       )}
