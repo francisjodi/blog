@@ -1,3 +1,8 @@
-# A Blog
+# A Food Blog
 
-This is a trivial blog app
+A Blog app for all foodies to talk about their awesome foods so people can see. 
+
+Authors: Nelson Davis, Jodi-Ann Francis, Erika Proctor
+
+
+
