@@ -47,7 +47,7 @@ article {
 }
 
 nav {
-  background-color: #ffbe7bff /*#dee9ff*/;
+  background-color: #ffbe7bff;
 }
 
 nav p:hover {
@@ -75,17 +75,11 @@ button {
   color: black;
   padding: 5px 20px;
   text-align: center;
-
-  /*text-decoration: none;*/
-  /*display: inline-block;*/
-  /*margin: 4px 2px;*/
   margin: 1.5vh;
   cursor: pointer;
   border: 5px solid white;
   font-size: 12px;
   transition-duration: 0.4s;
-  /*vertical-align: middle;*/
-
   width: 100px;
   height: 40px;
   padding: 10px;
