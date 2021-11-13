@@ -11,6 +11,8 @@ import {
   orderBy,
   limit,
   Timestamp,
+  doc,
+  deleteDoc,
 } from "firebase/firestore";
 
 export async function createArticle({ title, body }) {
@@ -29,4 +31,10 @@ export async function fetchArticles() {
     id: doc.id,
     ...doc.data(),
   }));
+}
+
+export async function deleteArticle(id) {
+  await deleteDoc(doc(db, "articles", id));
+  console.log(`${id} deleted!`);
+  return id;
 }

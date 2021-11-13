@@ -3,7 +3,7 @@ import Nav from "./Nav";
 import Article from "./Article";
 import ArticleEntry from "./ArticleEntry";
 import { SignIn, SignOut, useAuthentication } from "../services/authService";
-import { fetchArticles, createArticle } from "../services/articleService";
+import { fetchArticles, createArticle, deleteArticle, } from "../services/articleService";
 import "./App.css";
 
 export default function App() {
@@ -31,6 +31,13 @@ export default function App() {
       setWriting(false);
     });
   }
+  function removeArticle(id) {
+    deleteArticle(id).then((article) => {
+      setArticle(null);
+      setArticles(articles.filter((a) => a.id !== id));
+      setWriting(false);
+    });
+  }
 
   return (
     <div className="App">
@@ -47,7 +54,8 @@ export default function App() {
       ) : writing ? (
         <ArticleEntry addArticle={addArticle} />
       ) : (
-        <Article article={article} />
+        
+        <Article article={article} deleter={removeArticle} />
       )}
     </div>
   );
